@@ -6,7 +6,7 @@
 	<title>Muhammad Sabri</title>
 	<link rel="icon" href="assets/img/icon.png">
 	<link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 <body>
 <header id="home" class="relative bg-light font-body min-h-screen flex flex-col justify-center items-center dark:bg-black">
@@ -123,17 +123,18 @@
 							<input type="email" name="entry.1151883587" id="entry.1151883587" placeholder="ex: name@domain">
 						</div>
 						<div class="mb-8">
-							<label for="entry.1611346978" class="block mb-2 text-black opacity-70 py-1">Your Message</label>
-							<textarea name="entry.1611346978" id="entry.1611346978" class="form-input" rows="4" placeholder="Type your message here.."></textarea>
+							<label for="gformMessage" class="block mb-2 text-black opacity-70 py-1">Your Message</label>
+							<textarea name="gformMessage" id="gformMessage" class="form-input" rows="4" placeholder="Type your message here.."></textarea>
+							<input type="text" name="entry.1611346978" id="entry.1611346978" class="hidden" tabindex="-1">
 						</div>
 						<div class="grid md:flex md:justify-end">
 							<button type="submit" class="bg-black text-white px-4 py-3 rounded-sm font-bold mb-3 mt-0 transition-all duration-300 ease-in-out hover:-mt-2 hover:mb-5 dark:bg-primary-800"><i class="fas fa-paper-plane mr-2"></i>Send</button>
 						</div>
 					</form>
-					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+					<iframe name="hidden_iframe" id="hidden_iframe" class="hidden"></iframe>
 				</div>
 			</div>
-			<div class="relative md:min-h-screen lg:min-h-0 pt-20 lg:pt-40">
+			<div class="relative md:min-h-[80vw] lg:min-h-0 pt-20 lg:pt-40">
 				<h2 class="text-black text-center text-4xl font-extrabold hidden lg:block dark:text-white">I would love to <span class="text-primary-700 dark:text-primary-600">discuss</span> more. Let's get in touch!</h2>
 				<div class="w-2/3 mx-auto md:mx-0 md:absolute md:bottom-0 md:right-1/2 md:translate-x-1/2">
 					<img src="assets/img/cat_i-sm.png" data-lazy-img="assets/img/cat_i.png" class="w-full" alt="Cat illustration">
@@ -192,8 +193,8 @@
 		</div>
 	</div>
 </template>
-<div id="notification" class="fixed max-w-screen bottom-0 right-0 p-5 hidden">
-	<div class="bg-primary-800 rounded-lg border border-primary-900 shadow-lg px-4 py-3 flex flex-wrap items-center">
+<div id="notification" class="fixed max-w-screen bottom-0 md:bottom-8 lg:bottom-16 right-0 p-5 hidden">
+	<div class="bg-primary-800 rounded-lg border border-primary-900 shadow-lg px-4 py-3 flex flex-wrap items-center shadow-[inset_5px_5px_10px_rgba(255,255,255,0.1),3px_3px_5px_rgba(0,0,0,0.4)]">
 		<span class="font-body text-xs font-semibold text-white mr-4"><i class="fas fa-paper-plane"></i> Your messages was sended!</span>
 		<button type="button" class="text-white opacity-70 hover:opacity-90" onclick="this.closest('#notification').classList.add('hidden')"><i class="fas fa-times"></i></button>
 	</div>

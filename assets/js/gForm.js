@@ -7,3 +7,8 @@ gFormElm.onsubmit = function(){
 	submitted = true;
 	gFormElm.querySelector("textarea").value = "";
 };
+
+const gFormMessage = document.getElementById("gFormMessage");
+gFormMessage.onchange = function(){
+	document.getElementById("entry.1611346978").value = this.value;
+};
