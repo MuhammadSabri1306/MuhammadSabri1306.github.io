@@ -113,25 +113,23 @@
 			<div class="pb-20 md:flex lg:block">
 				<div class="bg-white border border-neutral-300 rounded-sm shadow-lg py-14 px-6 md:w-9/12 md:mx-auto lg:w-auto dark:bg-black dark:border-0">
 					<p class="text-black opacity-70 font-bold text-sm text-right mb-10 md:mb-16 lg:md-10">Send to <span class="font-extrabold">muhammadsabri1306@gmail.com</span></p>
-					<form name="gform" id="gform" enctype="text/plain" target="hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLSfxYJ0BZrnmVNkR0MbMiukmpkZjUdJFVpbiZBz9NEP_Tp7AUQ/formResponse?">
+					<form name="contact-form">
 						<div class="form-row">
-							<label for="entry.1223368999">Your Name</label>
-							<input type="text" name="entry.1223368999" id="entry.1223368999" placeholder="ex: Muhammad Sabri">
+							<label for="name">Your Name</label>
+							<input type="text" name="name" id="name" placeholder="ex: Muhammad Sabri" required>
 						</div>
 						<div class="form-row">
-							<label for="entry.1151883587">Your Email</label>
-							<input type="email" name="entry.1151883587" id="entry.1151883587" placeholder="ex: name@domain">
+							<label for="email">Your Email</label>
+							<input type="email" name="email" id="email" placeholder="ex: name@domain" required>
 						</div>
 						<div class="mb-8">
-							<label for="gformMessage" class="block mb-2 text-black opacity-70 py-1">Your Message</label>
-							<textarea name="gformMessage" id="gformMessage" class="form-input" rows="4" placeholder="Type your message here.."></textarea>
-							<input type="text" name="entry.1611346978" id="entry.1611346978" class="hidden" tabindex="-1">
+							<label for="message" class="block mb-2 text-black opacity-70 py-1">Your Message</label>
+							<textarea name="message" id="message" class="form-input" rows="4" placeholder="Type your message here.." required></textarea>
 						</div>
 						<div class="grid md:flex md:justify-end">
 							<button type="submit" class="bg-black text-white px-4 py-3 rounded-sm font-bold mb-3 mt-0 transition-all duration-300 ease-in-out hover:-mt-2 hover:mb-5 dark:bg-primary-800"><i class="fas fa-paper-plane mr-2"></i>Send</button>
 						</div>
 					</form>
-					<iframe name="hidden_iframe" id="hidden_iframe" class="hidden"></iframe>
 				</div>
 			</div>
 			<div class="relative md:min-h-[80vw] lg:min-h-0 pt-20 lg:pt-40">
@@ -201,6 +199,5 @@
 </div>
 <script src="vendor/fontawesome/js/all.min.js"></script>
 <script src="assets/js/script.min.js"></script>
-<script src="assets/js/gForm.min.js"></script>
 </body>
 </html>
